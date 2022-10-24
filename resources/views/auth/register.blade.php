@@ -123,14 +123,14 @@
                         <div class="row mt-4 mb-0">
                             <div class="col-md-4"></div>
                             <div class="col-md-6">
-                                <a class="google-button" href="#">
+                                <a class="google-button" href="{{route('login.google')}}">
                                     <span class="google-button__icon">
                                         <img src="https://e1.pngegg.com/pngimages/209/923/png-clipart-logo-google-g-suite-google-pay-google-doodle-texte-cercle-ligne-zone-thumbnail.png"
                                             alt="" srcset="" width="15">
                                     </span>
                                     <span class="google-button__text">Sign in with Google</span>
                                 </a>
-                                <a class="google-button" href="#">
+                                <a class="google-button" href="{{route('login.facebook')}}">
                                     <span class="google-button__icon">
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/768px-Facebook_f_logo_%282019%29.svg.png"
                                             alt="" srcset="" width="15">
