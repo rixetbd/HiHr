@@ -1,6 +1,22 @@
 # Human Resource Management
 ![Logo](https://raw.githubusercontent.com/rixetbd/HiHr/main/human-resource-banner.jpg)
 
+Human Resource Management System is a combination of systems and processes that connect human resource management and information technology through HRMS software.
+
+Each module performs a separate function within the HRMS that helps with information gathering or tracking. HRMS modules can assist with:
+1. Employee Management
+2. Leave Management
+3. Attendance Management
+4. Team Management
+5. Asset/Resource Management 
+
+## Requirement
+
+1. PHP version 8.1+
+3. [PHP Mysql](http://php.net/manual/en/ref.pdo-mysql.php)
+4. [Composer](https://getcomposer.org/)
+
+
 Human resource management is the strategic and coherent approach to the effective and efficient management of people in a company or organization such that they help their business gain a competitive advantage. It is designed to maximize employee performance in service of an employer's strategic objectives.
 
 ### 👨‍💻 Skills & Experiance:
