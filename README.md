@@ -1,9 +1,7 @@
 # Human Resource Management
-
-Human resource management is the strategic and coherent approach to the effective and efficient management of people in a company or organization such that they help their business gain a competitive advantage. It is designed to maximize employee performance in service of an employer's strategic objectives.
-
 ![Logo](https://raw.githubusercontent.com/rixetbd/HiHr/main/human-resource-banner.jpg)
 
+Human resource management is the strategic and coherent approach to the effective and efficient management of people in a company or organization such that they help their business gain a competitive advantage. It is designed to maximize employee performance in service of an employer's strategic objectives.
 
 ### 👨‍💻 Skills & Experiance:
 
