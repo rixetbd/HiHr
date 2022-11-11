@@ -95,7 +95,7 @@
                             <td>
                                 <h2 class="table-avatar">
                                     <a href="profile.html" class="avatar"><img alt=""
-                                            src="assets/img/profiles/avatar-02.jpg"></a>
+                                            src="{{asset('assets')}}/img/profiles/avatar-02.jpg"></a>
                                     <a href="profile.html">John Doe <span>Web Designer</span></a>
                                 </h2>
                             </td>
@@ -132,7 +132,7 @@
                         <tr>
                             <td>
                                 <h2 class="table-avatar">
-                                    <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-09.jpg"
+                                    <a href="profile.html" class="avatar"><img src="{{asset('assets')}}/img/profiles/avatar-09.jpg"
                                             alt=""></a>
                                     <a href="profile.html">Richard Miles <span>Web Developer</span></a>
                                 </h2>
@@ -170,7 +170,7 @@
                         <tr>
                             <td>
                                 <h2 class="table-avatar">
-                                    <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-10.jpg"
+                                    <a href="profile.html" class="avatar"><img src="{{asset('assets')}}/img/profiles/avatar-10.jpg"
                                             alt=""></a>
                                     <a href="profile.html">John Smith <span>Android Developer</span></a>
                                 </h2>
@@ -208,7 +208,7 @@
                         <tr>
                             <td>
                                 <h2 class="table-avatar">
-                                    <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-05.jpg"
+                                    <a href="profile.html" class="avatar"><img src="{{asset('assets')}}/img/profiles/avatar-05.jpg"
                                             alt=""></a>
                                     <a href="profile.html">Mike Litorus <span>IOS Developer</span></a>
                                 </h2>
@@ -246,7 +246,7 @@
                         <tr>
                             <td>
                                 <h2 class="table-avatar">
-                                    <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-11.jpg"
+                                    <a href="profile.html" class="avatar"><img src="{{asset('assets')}}/img/profiles/avatar-11.jpg"
                                             alt=""></a>
                                     <a href="profile.html">Wilmer Deluna <span>Team Leader</span></a>
                                 </h2>
@@ -284,7 +284,7 @@
                         <tr>
                             <td>
                                 <h2 class="table-avatar">
-                                    <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-12.jpg"
+                                    <a href="profile.html" class="avatar"><img src="{{asset('assets')}}/img/profiles/avatar-12.jpg"
                                             alt=""></a>
                                     <a href="profile.html">Jeffrey Warden <span>Web Developer</span></a>
                                 </h2>
@@ -322,7 +322,7 @@
                         <tr>
                             <td>
                                 <h2 class="table-avatar">
-                                    <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-13.jpg"
+                                    <a href="profile.html" class="avatar"><img src="{{asset('assets')}}/img/profiles/avatar-13.jpg"
                                             alt=""></a>
                                     <a href="profile.html">Bernardo Galaviz <span>Web Developer</span></a>
                                 </h2>
@@ -360,7 +360,7 @@
                         <tr>
                             <td>
                                 <h2 class="table-avatar">
-                                    <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-01.jpg"
+                                    <a href="profile.html" class="avatar"><img src="{{asset('assets')}}/img/profiles/avatar-01.jpg"
                                             alt=""></a>
                                     <a href="profile.html">Lesley Grauer <span>Team Leader</span></a>
                                 </h2>
@@ -398,7 +398,7 @@
                         <tr>
                             <td>
                                 <h2 class="table-avatar">
-                                    <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-16.jpg"
+                                    <a href="profile.html" class="avatar"><img src="{{asset('assets')}}/img/profiles/avatar-16.jpg"
                                             alt=""></a>
                                     <a href="profile.html">Jeffery Lalor <span>Team Leader</span></a>
                                 </h2>
@@ -436,7 +436,7 @@
                         <tr>
                             <td>
                                 <h2 class="table-avatar">
-                                    <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-04.jpg"
+                                    <a href="profile.html" class="avatar"><img src="{{asset('assets')}}/img/profiles/avatar-04.jpg"
                                             alt=""></a>
                                     <a href="profile.html">Loren Gatlin <span>Android Developer</span></a>
                                 </h2>
@@ -474,7 +474,7 @@
                         <tr>
                             <td>
                                 <h2 class="table-avatar">
-                                    <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-03.jpg"
+                                    <a href="profile.html" class="avatar"><img src="{{asset('assets')}}/img/profiles/avatar-03.jpg"
                                             alt=""></a>
                                     <a href="profile.html">Tarah Shropshire <span>Android Developer</span></a>
                                 </h2>

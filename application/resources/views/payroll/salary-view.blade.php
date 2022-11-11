@@ -34,7 +34,7 @@
                     <h4 class="payslip-title">Payslip for the month of Feb 2019</h4>
                     <div class="row">
                         <div class="col-sm-6 m-b-20">
-                            <img src="assets/img/logo.png" class="inv-logo" alt="">
+                            <img src="{{asset('assets')}}/img/logo.png" class="inv-logo" alt="">
                             <ul class="list-unstyled mb-0">
                                 <li>Dreamguy's Technologies</li>
                                 <li>3864 Quiet Valley Lane,</li>

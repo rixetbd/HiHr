@@ -8,46 +8,46 @@
         <meta name="author" content="Dreamguys - Bootstrap Admin Template">
         <meta name="robots" content="noindex, nofollow">
         <title>Tickets - HRMS admin template</title>
-		
+
 		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
-		
+        <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets')}}/img/favicon.png">
+
 		<!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		
+        <link rel="stylesheet" href="{{asset('assets')}}/css/bootstrap.min.css">
+
 		<!-- Fontawesome CSS -->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-		
+        <link rel="stylesheet" href="{{asset('assets')}}/css/font-awesome.min.css">
+
 		<!-- Lineawesome CSS -->
-        <link rel="stylesheet" href="assets/css/line-awesome.min.css">
-		
+        <link rel="stylesheet" href="{{asset('assets')}}/css/line-awesome.min.css">
+
 		<!-- Select2 CSS -->
-		<link rel="stylesheet" href="assets/css/select2.min.css">
-		
+		<link rel="stylesheet" href="{{asset('assets')}}/css/select2.min.css">
+
 		<!-- Main CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
-		
+        <link rel="stylesheet" href="{{asset('assets')}}/css/style.css">
+
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
-			<script src="assets/js/html5shiv.min.js"></script>
-			<script src="assets/js/respond.min.js"></script>
+			<script src="{{asset('assets')}}/js/html5shiv.min.js"></script>
+			<script src="{{asset('assets')}}/js/respond.min.js"></script>
 		<![endif]-->
     </head>
     <body>
 		<!-- Main Wrapper -->
         <div class="main-wrapper">
-		
+
 			<!-- Header -->
             <div class="header">
-			
+
 				<!-- Logo -->
                 <div class="header-left">
                     <a href="index.html" class="logo">
-						<img src="assets/img/logo.png" width="40" height="40" alt="">
+						<img src="{{asset('assets')}}/img/logo.png" width="40" height="40" alt="">
 					</a>
                 </div>
 				<!-- /Logo -->
-				
+
 				<a id="toggle_btn" href="javascript:void(0);">
 					<span class="bar-icon">
 						<span></span>
@@ -55,18 +55,18 @@
 						<span></span>
 					</span>
 				</a>
-				
+
 				<!-- Header Title -->
                 <div class="page-title-box">
 					<h3>Dreamguy's Technologies</h3>
                 </div>
 				<!-- /Header Title -->
-				
+
 				<a id="mobile_btn" class="mobile_btn" href="#sidebar"><i class="fa fa-bars"></i></a>
-				
+
 				<!-- Header Menu -->
 				<ul class="nav user-menu">
-				
+
 					<!-- Search -->
 					<li class="nav-item">
 						<div class="top-nav-search">
@@ -80,29 +80,29 @@
 						</div>
 					</li>
 					<!-- /Search -->
-				
+
 					<!-- Flag -->
 					<li class="nav-item dropdown has-arrow flag-nav">
 						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
-							<img src="assets/img/flags/us.png" alt="" height="20"> <span>English</span>
+							<img src="{{asset('assets')}}/img/flags/us.png" alt="" height="20"> <span>English</span>
 						</a>
 						<div class="dropdown-menu dropdown-menu-right">
 							<a href="javascript:void(0);" class="dropdown-item">
-								<img src="assets/img/flags/us.png" alt="" height="16"> English
+								<img src="{{asset('assets')}}/img/flags/us.png" alt="" height="16"> English
 							</a>
 							<a href="javascript:void(0);" class="dropdown-item">
-								<img src="assets/img/flags/fr.png" alt="" height="16"> French
+								<img src="{{asset('assets')}}/img/flags/fr.png" alt="" height="16"> French
 							</a>
 							<a href="javascript:void(0);" class="dropdown-item">
-								<img src="assets/img/flags/es.png" alt="" height="16"> Spanish
+								<img src="{{asset('assets')}}/img/flags/es.png" alt="" height="16"> Spanish
 							</a>
 							<a href="javascript:void(0);" class="dropdown-item">
-								<img src="assets/img/flags/de.png" alt="" height="16"> German
+								<img src="{{asset('assets')}}/img/flags/de.png" alt="" height="16"> German
 							</a>
 						</div>
 					</li>
 					<!-- /Flag -->
-				
+
 					<!-- Notifications -->
 					<li class="nav-item dropdown">
 						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
@@ -119,7 +119,7 @@
 										<a href="activities.html">
 											<div class="media">
 												<span class="avatar">
-													<img alt="" src="assets/img/profiles/avatar-02.jpg">
+													<img alt="" src="{{asset('assets')}}/img/profiles/avatar-02.jpg">
 												</span>
 												<div class="media-body">
 													<p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
@@ -132,7 +132,7 @@
 										<a href="activities.html">
 											<div class="media">
 												<span class="avatar">
-													<img alt="" src="assets/img/profiles/avatar-03.jpg">
+													<img alt="" src="{{asset('assets')}}/img/profiles/avatar-03.jpg">
 												</span>
 												<div class="media-body">
 													<p class="noti-details"><span class="noti-title">Tarah Shropshire</span> changed the task name <span class="noti-title">Appointment booking with payment gateway</span></p>
@@ -145,7 +145,7 @@
 										<a href="activities.html">
 											<div class="media">
 												<span class="avatar">
-													<img alt="" src="assets/img/profiles/avatar-06.jpg">
+													<img alt="" src="{{asset('assets')}}/img/profiles/avatar-06.jpg">
 												</span>
 												<div class="media-body">
 													<p class="noti-details"><span class="noti-title">Misty Tison</span> added <span class="noti-title">Domenic Houston</span> and <span class="noti-title">Claire Mapes</span> to project <span class="noti-title">Doctor available module</span></p>
@@ -158,7 +158,7 @@
 										<a href="activities.html">
 											<div class="media">
 												<span class="avatar">
-													<img alt="" src="assets/img/profiles/avatar-17.jpg">
+													<img alt="" src="{{asset('assets')}}/img/profiles/avatar-17.jpg">
 												</span>
 												<div class="media-body">
 													<p class="noti-details"><span class="noti-title">Rolland Webber</span> completed task <span class="noti-title">Patient and Doctor video conferencing</span></p>
@@ -171,7 +171,7 @@
 										<a href="activities.html">
 											<div class="media">
 												<span class="avatar">
-													<img alt="" src="assets/img/profiles/avatar-13.jpg">
+													<img alt="" src="{{asset('assets')}}/img/profiles/avatar-13.jpg">
 												</span>
 												<div class="media-body">
 													<p class="noti-details"><span class="noti-title">Bernardo Galaviz</span> added new task <span class="noti-title">Private chat module</span></p>
@@ -188,7 +188,7 @@
 						</div>
 					</li>
 					<!-- /Notifications -->
-					
+
 					<!-- Message Notifications -->
 					<li class="nav-item dropdown">
 						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
@@ -206,7 +206,7 @@
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
-														<img alt="" src="assets/img/profiles/avatar-09.jpg">
+														<img alt="" src="{{asset('assets')}}/img/profiles/avatar-09.jpg">
 													</span>
 												</div>
 												<div class="list-body">
@@ -223,7 +223,7 @@
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
-														<img alt="" src="assets/img/profiles/avatar-02.jpg">
+														<img alt="" src="{{asset('assets')}}/img/profiles/avatar-02.jpg">
 													</span>
 												</div>
 												<div class="list-body">
@@ -240,7 +240,7 @@
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
-														<img alt="" src="assets/img/profiles/avatar-03.jpg">
+														<img alt="" src="{{asset('assets')}}/img/profiles/avatar-03.jpg">
 													</span>
 												</div>
 												<div class="list-body">
@@ -257,7 +257,7 @@
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
-														<img alt="" src="assets/img/profiles/avatar-05.jpg">
+														<img alt="" src="{{asset('assets')}}/img/profiles/avatar-05.jpg">
 													</span>
 												</div>
 												<div class="list-body">
@@ -274,7 +274,7 @@
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
-														<img alt="" src="assets/img/profiles/avatar-08.jpg">
+														<img alt="" src="{{asset('assets')}}/img/profiles/avatar-08.jpg">
 													</span>
 												</div>
 												<div class="list-body">
@@ -297,7 +297,7 @@
 
 					<li class="nav-item dropdown has-arrow main-drop">
 						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-							<span class="user-img"><img src="assets/img/profiles/avatar-21.jpg" alt="">
+							<span class="user-img"><img src="{{asset('assets')}}/img/profiles/avatar-21.jpg" alt="">
 							<span class="status online"></span></span>
 							<span>Admin</span>
 						</a>
@@ -309,7 +309,7 @@
 					</li>
 				</ul>
 				<!-- /Header Menu -->
-				
+
 				<!-- Mobile Menu -->
 				<div class="dropdown mobile-user-menu">
 					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
@@ -320,16 +320,16 @@
 					</div>
 				</div>
 				<!-- /Mobile Menu -->
-				
+
             </div>
 			<!-- /Header -->
-			
+
 			<!-- Sidebar -->
             <div class="sidebar" id="sidebar">
                 <div class="sidebar-inner slimscroll">
 					<div id="sidebar-menu" class="sidebar-menu">
 						<ul>
-							<li class="menu-title"> 
+							<li class="menu-title">
 								<span>Main</span>
 							</li>
 							<li class="submenu">
@@ -358,7 +358,7 @@
 									<li><a href="file-manager.html">File Manager</a></li>
 								</ul>
 							</li>
-							<li class="menu-title"> 
+							<li class="menu-title">
 								<span>Employees</span>
 							</li>
 							<li class="submenu">
@@ -377,7 +377,7 @@
 									<li><a href="overtime.html">Overtime</a></li>
 								</ul>
 							</li>
-							<li> 
+							<li>
 								<a href="clients.html"><i class="la la-users"></i> <span>Clients</span></a>
 							</li>
 							<li class="submenu">
@@ -388,13 +388,13 @@
 									<li><a href="task-board.html">Task Board</a></li>
 								</ul>
 							</li>
-							<li> 
+							<li>
 								<a href="leads.html"><i class="la la-user-secret"></i> <span>Leads</span></a>
 							</li>
-							<li class="active"> 
+							<li class="active">
 								<a href="tickets.html"><i class="la la-ticket"></i> <span>Tickets</span></a>
 							</li>
-							<li class="menu-title"> 
+							<li class="menu-title">
 								<span>HR</span>
 							</li>
 							<li class="submenu">
@@ -416,7 +416,7 @@
 									<li><a href="payroll-items.html"> Payroll Items </a></li>
 								</ul>
 							</li>
-							<li> 
+							<li>
 								<a href="policies.html"><i class="la la-file-pdf-o"></i> <span>Policies</span></a>
 							</li>
 							<li class="submenu">
@@ -426,7 +426,7 @@
 									<li><a href="invoice-reports.html"> Invoice Report </a></li>
 								</ul>
 							</li>
-							<li class="menu-title"> 
+							<li class="menu-title">
 								<span>Performance</span>
 							</li>
 							<li class="submenu">
@@ -455,10 +455,10 @@
 							<li><a href="promotion.html"><i class="la la-bullhorn"></i> <span>Promotion</span></a></li>
 							<li><a href="resignation.html"><i class="la la-external-link-square"></i> <span>Resignation</span></a></li>
 							<li><a href="termination.html"><i class="la la-times-circle"></i> <span>Termination</span></a></li>
-							<li class="menu-title"> 
+							<li class="menu-title">
 								<span>Administration</span>
 							</li>
-							<li> 
+							<li>
 								<a href="assets.html"><i class="la la-object-ungroup"></i> <span>Assets</span></a>
 							</li>
 							<li class="submenu">
@@ -468,19 +468,19 @@
 									<li><a href="job-applicants.html"> Applied Candidates </a></li>
 								</ul>
 							</li>
-							<li> 
+							<li>
 								<a href="knowledgebase.html"><i class="la la-question"></i> <span>Knowledgebase</span></a>
 							</li>
-							<li> 
+							<li>
 								<a href="activities.html"><i class="la la-bell"></i> <span>Activities</span></a>
 							</li>
-							<li> 
+							<li>
 								<a href="users.html"><i class="la la-user-plus"></i> <span>Users</span></a>
 							</li>
-							<li> 
+							<li>
 								<a href="settings.html"><i class="la la-cog"></i> <span>Settings</span></a>
 							</li>
-							<li class="menu-title"> 
+							<li class="menu-title">
 								<span>Pages</span>
 							</li>
 							<li class="submenu">
@@ -525,10 +525,10 @@
 									<li><a href="blank-page.html"> Blank Page </a></li>
 								</ul>
 							</li>
-							<li class="menu-title"> 
+							<li class="menu-title">
 								<span>UI Interface</span>
 							</li>
-							<li> 
+							<li>
 								<a href="components.html"><i class="la la-puzzle-piece"></i> <span>Components</span></a>
 							</li>
 							<li class="submenu">
@@ -549,13 +549,13 @@
 									<li><a href="data-tables.html">Data Table </a></li>
 								</ul>
 							</li>
-							<li class="menu-title"> 
+							<li class="menu-title">
 								<span>Extras</span>
 							</li>
-							<li> 
+							<li>
 								<a href="#"><i class="la la-file-text"></i> <span>Documentation</span></a>
 							</li>
-							<li> 
+							<li>
 								<a href="javascript:void(0);"><i class="la la-info"></i> <span>Change Log</span> <span class="badge badge-primary ml-auto">v3.4</span></a>
 							</li>
 							<li class="submenu">
@@ -585,7 +585,7 @@
                 </div>
             </div>
 			<!-- /Sidebar -->
-			
+
 			<!-- Page Wrapper -->
             <div class="page-wrapper">
 				<div class="chat-main-row">
@@ -597,9 +597,9 @@
 										<div class="float-left ticket-view-details">
 											<div class="ticket-header">
 												<span>Status: </span> <span class="badge badge-warning">New</span> <span class="m-l-15 text-muted">Client: </span>
-												<a href="#">Delta Infotech</a>    
+												<a href="#">Delta Infotech</a>
 												<span class="m-l-15 text-muted">Created: </span>
-												<span>5 Jan 2019 07:21 AM </span> 
+												<span>5 Jan 2019 07:21 AM </span>
 												<span class="m-l-15 text-muted">Created by:</span>
 												<span><a href="profile.html">John Doe</a></span>
 											</div>
@@ -641,7 +641,7 @@
 																<div class="col-md-3 col-sm-6">
 																	<div class="uploaded-box">
 																		<div class="uploaded-img">
-																			<img src="assets/img/placeholder.jpg" class="img-fluid" alt="">
+																			<img src="{{asset('assets')}}/img/placeholder.jpg" class="img-fluid" alt="">
 																		</div>
 																		<div class="uploaded-img-name">
 																			 demo.png
@@ -651,7 +651,7 @@
 																<div class="col-md-3 col-sm-6">
 																	<div class="uploaded-box">
 																		<div class="uploaded-img">
-																			<img src="assets/img/placeholder.jpg" class="img-fluid" alt="">
+																			<img src="{{asset('assets')}}/img/placeholder.jpg" class="img-fluid" alt="">
 																		</div>
 																		<div class="uploaded-img-name">
 																			 demo.png
@@ -661,7 +661,7 @@
 																<div class="col-md-3 col-sm-6">
 																	<div class="uploaded-box">
 																		<div class="uploaded-img">
-																			<img src="assets/img/placeholder.jpg" class="img-fluid" alt="">
+																			<img src="{{asset('assets')}}/img/placeholder.jpg" class="img-fluid" alt="">
 																		</div>
 
 																		<div class="uploaded-img-name">
@@ -672,7 +672,7 @@
 																<div class="col-md-3 col-sm-6">
 																	<div class="uploaded-box">
 																		<div class="uploaded-img">
-																			<img src="assets/img/placeholder.jpg" class="img-fluid" alt="">
+																			<img src="{{asset('assets')}}/img/placeholder.jpg" class="img-fluid" alt="">
 																		</div>
 																		<div class="uploaded-img-name">
 																			 demo.png
@@ -751,9 +751,9 @@
 								<div class="fixed-header">
 									<div class="navbar">
 										<div class="task-assign">
-											<span class="assign-title">Assigned to </span> 
+											<span class="assign-title">Assigned to </span>
 											<a href="#" data-toggle="tooltip" data-placement="bottom" title="John Doe" class="avatar">
-												<img src="assets/img/profiles/avatar-02.jpg" alt="">
+												<img src="{{asset('assets')}}/img/profiles/avatar-02.jpg" alt="">
 											</a>
 											<a href="#" class="followers-add" title="Add Assignee" data-toggle="modal" data-target="#assignee"><i class="material-icons">add</i></a>
 										</div>
@@ -776,7 +776,7 @@
 													<div class="chat chat-left">
 														<div class="chat-avatar">
 															<a href="profile.html" class="avatar">
-																<img src="assets/img/profiles/avatar-02.jpg" alt="">
+																<img src="{{asset('assets')}}/img/profiles/avatar-02.jpg" alt="">
 															</a>
 														</div>
 														<div class="chat-body">
@@ -792,20 +792,20 @@
 													<div class="completed-task-msg">
 														<span class="task-success">
 															<a href="#">John Doe</a> closed this ticket.
-														</span> 
+														</span>
 														<span class="task-time">Today at 9:27am</span>
 													</div>
 													<div class="chat chat-left">
 														<div class="chat-avatar">
 															<a href="profile.html" class="avatar">
-																<img src="assets/img/profiles/avatar-02.jpg" alt="">
+																<img src="{{asset('assets')}}/img/profiles/avatar-02.jpg" alt="">
 															</a>
 														</div>
 														<div class="chat-body">
 															<div class="chat-bubble">
 																<div class="chat-content">
-																	<span class="task-chat-user">John Doe</span> 
-																	<span class="file-attached">attached 3 files <i class="fa fa-paperclip"></i></span> 
+																	<span class="task-chat-user">John Doe</span>
+																	<span class="file-attached">attached 3 files <i class="fa fa-paperclip"></i></span>
 																	<span class="chat-time">Feb 17, 2019 at 4:32am</span>
 																	<ul class="attach-list">
 																		<li><i class="fa fa-file"></i> <a href="#">project_document.avi</a></li>
@@ -819,14 +819,14 @@
 													<div class="chat chat-left">
 														<div class="chat-avatar">
 															<a href="profile.html" class="avatar">
-																<img src="assets/img/profiles/avatar-09.jpg" alt="">
+																<img src="{{asset('assets')}}/img/profiles/avatar-09.jpg" alt="">
 															</a>
 														</div>
 														<div class="chat-body">
 															<div class="chat-bubble">
 																<div class="chat-content">
-																	<span class="task-chat-user">Jeffery Lalor</span> 
-																	<span class="file-attached">attached file <i class="fa fa-paperclip"></i></span> 
+																	<span class="task-chat-user">Jeffery Lalor</span>
+																	<span class="file-attached">attached file <i class="fa fa-paperclip"></i></span>
 																	<span class="chat-time">Yesterday at 9:16pm</span>
 																	<ul class="attach-list">
 																		<li class="pdf-file"><i class="fa fa-file-pdf-o"></i> <a href="#">Document_2016.pdf</a></li>
@@ -838,19 +838,19 @@
 													<div class="chat chat-left">
 														<div class="chat-avatar">
 															<a href="profile.html" class="avatar">
-																<img src="assets/img/profiles/avatar-09.jpg" alt="">
+																<img src="{{asset('assets')}}/img/profiles/avatar-09.jpg" alt="">
 															</a>
 														</div>
 														<div class="chat-body">
 															<div class="chat-bubble">
 																<div class="chat-content">
-																	<span class="task-chat-user">Jeffery Lalor</span> 
-																	<span class="file-attached">attached file <i class="fa fa-paperclip"></i></span> 
+																	<span class="task-chat-user">Jeffery Lalor</span>
+																	<span class="file-attached">attached file <i class="fa fa-paperclip"></i></span>
 																	<span class="chat-time">Today at 12:42pm</span>
 																	<ul class="attach-list">
 																		<li class="img-file">
 																			<div class="attach-img-download"><a href="#">avatar-1.jpg</a></div>
-																			<div class="task-attach-img"><img src="assets/img/user.jpg" alt=""></div>
+																			<div class="task-attach-img"><img src="{{asset('assets')}}/img/user.jpg" alt=""></div>
 																		</li>
 																	</ul>
 																</div>
@@ -859,7 +859,7 @@
 													</div>
 													<div class="task-information">
 														<span class="task-info-line">
-															<a class="task-user" href="#">John Doe</a> 
+															<a class="task-user" href="#">John Doe</a>
 															<span class="task-info-subject">marked ticket as reopened</span>
 														</span>
 														<div class="task-time">1:16pm</div>
@@ -872,7 +872,7 @@
 								<div class="chat-footer">
 									<div class="message-bar">
 										<div class="message-inner">
-											<a class="link attach-icon" href="#"><img src="assets/img/attachment.png" alt=""></a>
+											<a class="link attach-icon" href="#"><img src="{{asset('assets')}}/img/attachment.png" alt=""></a>
 											<div class="message-area">
 												<div class="input-group">
 													<textarea class="form-control" placeholder="Type message..."></textarea>
@@ -886,16 +886,16 @@
 									<div class="project-members task-followers">
 										<span class="followers-title">Followers</span>
 										<a href="#" data-toggle="tooltip" title="Richard Miles" class="avatar">
-											<img src="assets/img/profiles/avatar-09.jpg" alt="">
+											<img src="{{asset('assets')}}/img/profiles/avatar-09.jpg" alt="">
 										</a>
 										<a href="#" data-toggle="tooltip" title="John Smith" class="avatar">
-											<img src="assets/img/profiles/avatar-10.jpg" alt="">
+											<img src="{{asset('assets')}}/img/profiles/avatar-10.jpg" alt="">
 										</a>
 										<a href="#" data-toggle="tooltip" title="Mike Litorus" class="avatar">
-											<img src="assets/img/profiles/avatar-05.jpg" alt="">
+											<img src="{{asset('assets')}}/img/profiles/avatar-05.jpg" alt="">
 										</a>
 										<a href="#" data-toggle="tooltip" title="Wilmer Deluna" class="avatar">
-											<img src="assets/img/profiles/avatar-11.jpg" alt="">
+											<img src="{{asset('assets')}}/img/profiles/avatar-11.jpg" alt="">
 										</a>
 										<a href="#" class="followers-add" data-toggle="modal" data-target="#task_followers"><i class="material-icons">add</i></a>
 									</div>
@@ -904,7 +904,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<!-- Edit Ticket Modal -->
 				<div id="edit_ticket" class="modal custom-modal fade" role="dialog">
 					<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -983,7 +983,7 @@
 												<label>Ticket Assignee</label>
 												<div class="project-members">
 													<a title="John Smith" data-toggle="tooltip" href="#" >
-														<img src="assets/img/profiles/avatar-10.jpg" alt="">
+														<img src="{{asset('assets')}}/img/profiles/avatar-10.jpg" alt="">
 													</a>
 												</div>
 											</div>
@@ -1001,16 +1001,16 @@
 												<label>Ticket Followers</label>
 												<div class="project-members">
 													<a title="Richard Miles" data-toggle="tooltip" href="#" class="avatar">
-														<img src="assets/img/profiles/avatar-09.jpg" alt="">
+														<img src="{{asset('assets')}}/img/profiles/avatar-09.jpg" alt="">
 													</a>
 													<a title="John Smith" data-toggle="tooltip" href="#" class="avatar">
-														<img src="assets/img/profiles/avatar-10.jpg" alt="">
+														<img src="{{asset('assets')}}/img/profiles/avatar-10.jpg" alt="">
 													</a>
 													<a title="Mike Litorus" data-toggle="tooltip" href="#" class="avatar">
-														<img src="assets/img/profiles/avatar-05.jpg" alt="">
+														<img src="{{asset('assets')}}/img/profiles/avatar-05.jpg" alt="">
 													</a>
 													<a title="Wilmer Deluna" data-toggle="tooltip" href="#" class="avatar">
-														<img src="assets/img/profiles/avatar-11.jpg" alt="">
+														<img src="{{asset('assets')}}/img/profiles/avatar-11.jpg" alt="">
 													</a>
 													<span class="all-team">+2</span>
 												</div>
@@ -1038,7 +1038,7 @@
 					</div>
 				</div>
 				<!-- /Edit Ticket Modal -->
-				
+
 				<!-- Delete Ticket Modal -->
 				<div class="modal custom-modal fade" id="delete_ticket" role="dialog">
 					<div class="modal-dialog modal-dialog-centered">
@@ -1063,7 +1063,7 @@
 					</div>
 				</div>
 				<!-- /Delete Ticket Modal -->
-				
+
 				<!-- Assignee Modal -->
 				<div id="assignee" class="modal custom-modal fade" role="dialog">
 					<div class="modal-dialog modal-dialog-centered" role="document">
@@ -1087,7 +1087,7 @@
 											<a href="#">
 												<div class="media">
 													<span class="avatar">
-														<img src="assets/img/profiles/avatar-09.jpg" alt="">
+														<img src="{{asset('assets')}}/img/profiles/avatar-09.jpg" alt="">
 													</span>
 													<div class="media-body align-self-center text-nowrap">
 														<div class="user-name">Richard Miles</div>
@@ -1100,7 +1100,7 @@
 											<a href="#">
 												<div class="media">
 													<span class="avatar">
-														<img src="assets/img/profiles/avatar-10.jpg" alt="">
+														<img src="{{asset('assets')}}/img/profiles/avatar-10.jpg" alt="">
 													</span>
 													<div class="media-body align-self-center text-nowrap">
 														<div class="user-name">John Smith</div>
@@ -1113,7 +1113,7 @@
 											<a href="#">
 												<div class="media">
 													<span class="avatar">
-														<img src="assets/img/profiles/avatar-10.jpg" alt="">
+														<img src="{{asset('assets')}}/img/profiles/avatar-10.jpg" alt="">
 													</span>
 													<div class="media-body align-self-center text-nowrap">
 														<div class="user-name">Jeffery Lalor</div>
@@ -1132,7 +1132,7 @@
 					</div>
 				</div>
 				<!-- /Assignee Modal -->
-				
+
 				<!-- Task Followers Modal -->
 				<div id="task_followers" class="modal custom-modal fade" role="dialog">
 					<div class="modal-dialog modal-dialog-centered" role="document">
@@ -1156,7 +1156,7 @@
 											<a href="#">
 												<div class="media">
 													<span class="avatar">
-														<img src="assets/img/profiles/avatar-10.jpg" alt="">
+														<img src="{{asset('assets')}}/img/profiles/avatar-10.jpg" alt="">
 													</span>
 													<div class="media-body media-middle text-nowrap">
 														<div class="user-name">Jeffery Lalor</div>
@@ -1169,7 +1169,7 @@
 											<a href="#">
 												<div class="media">
 													<span class="avatar">
-														<img src="assets/img/profiles/avatar-08.jpg" alt="">
+														<img src="{{asset('assets')}}/img/profiles/avatar-08.jpg" alt="">
 													</span>
 													<div class="media-body media-middle text-nowrap">
 														<div class="user-name">Catherine Manseau</div>
@@ -1182,7 +1182,7 @@
 											<a href="#">
 												<div class="media">
 													<span class="avatar">
-														<img src="assets/img/profiles/avatar-11.jpg" alt="">
+														<img src="{{asset('assets')}}/img/profiles/avatar-11.jpg" alt="">
 													</span>
 													<div class="media-body media-middle text-nowrap">
 														<div class="user-name">Wilmer Deluna</div>
@@ -1201,7 +1201,7 @@
 					</div>
 				</div>
 				<!-- /Task Followers Modal -->
-				
+
             </div>
 			<!-- /Page Wrapper -->
 
@@ -1209,20 +1209,20 @@
 		<!-- /Main Wrapper -->
 
 		<!-- jQuery -->
-        <script src="assets/js/jquery-3.2.1.min.js"></script>
+        <script src="{{asset('assets')}}/js/jquery-3.2.1.min.js"></script>
 
 		<!-- Bootstrap Core JS -->
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="{{asset('assets')}}/js/popper.min.js"></script>
+        <script src="{{asset('assets')}}/js/bootstrap.min.js"></script>
 
 		<!-- Slimscroll JS -->
-		<script src="assets/js/jquery.slimscroll.min.js"></script>
-		
+		<script src="{{asset('assets')}}/js/jquery.slimscroll.min.js"></script>
+
 		<!-- Select2 JS -->
-		<script src="assets/js/select2.min.js"></script>
+		<script src="{{asset('assets')}}/js/select2.min.js"></script>
 
 		<!-- Custom JS -->
-		<script src="assets/js/app.js"></script>
-		
+		<script src="{{asset('assets')}}/js/app.js"></script>
+
     </body>
 </html>

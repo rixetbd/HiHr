@@ -9,6 +9,10 @@ class EmployeeController extends Controller
 {
 
 
+    public function index()
+    {
+        return view('employee-dashboard');
+    }
     public function all()
     {
         return view('employee.all_employee');
@@ -25,23 +29,43 @@ class EmployeeController extends Controller
     {
         return view('employee.leaves');
     }
+    public function leave_settings()
+    {
+        return view('employee.leave-settings');
+    }
     public function attendance()
     {
         return view('employee.attendance');
     }
+    public function departments()
+    {
+        return view('employee.departments');
+    }
+    public function designations()
+    {
+        return view('employee.designations');
+    }
+    public function timesheet()
+    {
+        return view('employee.timesheet');
+    }
+    public function overtime()
+    {
+        return view('employee.overtime');
+    }
     public function salary()
     {
         return view('payroll.salary');
+    }
+    public function salary_settings()
+    {
+        return view('payroll.salary-settings');
     }
     public function salary_view()
     {
         return view('payroll.salary-view');
     }
 
-    public function index()
-    {
-        //
-    }
 
     /**
      * Show the form for creating a new resource.

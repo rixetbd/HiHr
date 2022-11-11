@@ -26,7 +26,7 @@
                     <div class="profile-view">
                         <div class="profile-img-wrap">
                             <div class="profile-img">
-                                <a href="#"><img alt="" src="assets/img/profiles/avatar-02.jpg"></a>
+                                <a href="#"><img alt="" src="{{asset('assets')}}/img/profiles/avatar-02.jpg"></a>
                             </div>
                         </div>
                         <div class="profile-basic">
@@ -69,7 +69,7 @@
                                             <div class="text">
                                                 <div class="avatar-box">
                                                     <div class="avatar avatar-xs">
-                                                        <img src="assets/img/profiles/avatar-16.jpg" alt="">
+                                                        <img src="{{asset('assets')}}/img/profiles/avatar-16.jpg" alt="">
                                                     </div>
                                                 </div>
                                                 <a href="profile.html">
@@ -387,7 +387,7 @@
                                 <ul class="team-members">
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="Jeffery Lalor"><img alt=""
-                                                src="assets/img/profiles/avatar-16.jpg"></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-16.jpg"></a>
                                     </li>
                                 </ul>
                             </div>
@@ -396,19 +396,19 @@
                                 <ul class="team-members">
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="John Doe"><img alt=""
-                                                src="assets/img/profiles/avatar-02.jpg"></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-02.jpg"></a>
                                     </li>
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="Richard Miles"><img alt=""
-                                                src="assets/img/profiles/avatar-09.jpg"></a></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-09.jpg"></a></a>
                                     </li>
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="John Smith"><img alt=""
-                                                src="assets/img/profiles/avatar-10.jpg"></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-10.jpg"></a>
                                     </li>
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="Mike Litorus"><img alt=""
-                                                src="assets/img/profiles/avatar-05.jpg"></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-05.jpg"></a>
                                     </li>
                                     <li>
                                         <a href="#" class="all-users">+15</a>
@@ -459,7 +459,7 @@
                                 <ul class="team-members">
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="Jeffery Lalor"><img alt=""
-                                                src="assets/img/profiles/avatar-16.jpg"></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-16.jpg"></a>
                                     </li>
                                 </ul>
                             </div>
@@ -468,19 +468,19 @@
                                 <ul class="team-members">
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="John Doe"><img alt=""
-                                                src="assets/img/profiles/avatar-02.jpg"></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-02.jpg"></a>
                                     </li>
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="Richard Miles"><img alt=""
-                                                src="assets/img/profiles/avatar-09.jpg"></a></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-09.jpg"></a></a>
                                     </li>
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="John Smith"><img alt=""
-                                                src="assets/img/profiles/avatar-10.jpg"></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-10.jpg"></a>
                                     </li>
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="Mike Litorus"><img alt=""
-                                                src="assets/img/profiles/avatar-05.jpg"></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-05.jpg"></a>
                                     </li>
                                     <li>
                                         <a href="#" class="all-users">+15</a>
@@ -531,7 +531,7 @@
                                 <ul class="team-members">
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="Jeffery Lalor"><img alt=""
-                                                src="assets/img/profiles/avatar-16.jpg"></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-16.jpg"></a>
                                     </li>
                                 </ul>
                             </div>
@@ -540,19 +540,19 @@
                                 <ul class="team-members">
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="John Doe"><img alt=""
-                                                src="assets/img/profiles/avatar-02.jpg"></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-02.jpg"></a>
                                     </li>
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="Richard Miles"><img alt=""
-                                                src="assets/img/profiles/avatar-09.jpg"></a></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-09.jpg"></a></a>
                                     </li>
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="John Smith"><img alt=""
-                                                src="assets/img/profiles/avatar-10.jpg"></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-10.jpg"></a>
                                     </li>
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="Mike Litorus"><img alt=""
-                                                src="assets/img/profiles/avatar-05.jpg"></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-05.jpg"></a>
                                     </li>
                                     <li>
                                         <a href="#" class="all-users">+15</a>
@@ -603,7 +603,7 @@
                                 <ul class="team-members">
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="Jeffery Lalor"><img alt=""
-                                                src="assets/img/profiles/avatar-16.jpg"></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-16.jpg"></a>
                                     </li>
                                 </ul>
                             </div>
@@ -612,19 +612,19 @@
                                 <ul class="team-members">
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="John Doe"><img alt=""
-                                                src="assets/img/profiles/avatar-02.jpg"></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-02.jpg"></a>
                                     </li>
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="Richard Miles"><img alt=""
-                                                src="assets/img/profiles/avatar-09.jpg"></a></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-09.jpg"></a></a>
                                     </li>
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="John Smith"><img alt=""
-                                                src="assets/img/profiles/avatar-10.jpg"></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-10.jpg"></a>
                                     </li>
                                     <li>
                                         <a href="#" data-toggle="tooltip" title="Mike Litorus"><img alt=""
-                                                src="assets/img/profiles/avatar-05.jpg"></a>
+                                                src="{{asset('assets')}}/img/profiles/avatar-05.jpg"></a>
                                     </li>
                                     <li>
                                         <a href="#" class="all-users">+15</a>
@@ -880,7 +880,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="profile-img-wrap edit-img">
-                                <img class="inline-block" src="assets/img/profiles/avatar-02.jpg" alt="user">
+                                <img class="inline-block" src="{{asset('assets')}}/img/profiles/avatar-02.jpg" alt="user">
                                 <div class="fileupload btn">
                                     <span class="btn-text">edit</span>
                                     <input class="upload" type="file">

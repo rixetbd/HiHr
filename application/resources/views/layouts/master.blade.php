@@ -32,6 +32,8 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="{{asset('assets')}}/css/style.css">
 
+    @yield('custom_css')
+
 </head>
 
 @php
@@ -48,7 +50,7 @@ $currentRouteName = Route::currentRouteName();
 
             <!-- Logo -->
             <div class="header-left">
-                <a href="index.html" class="logo">
+                <a href="{{url('/')}}" class="logo">
                     <img src="{{asset('assets')}}/img/logo.png" width="40" height="40" alt="">
                 </a>
             </div>
@@ -88,7 +90,7 @@ $currentRouteName = Route::currentRouteName();
                 <!-- /Search -->
 
                 <!-- Flag -->
-                <li class="nav-item dropdown has-arrow flag-nav">
+                {{-- <li class="nav-item dropdown has-arrow flag-nav">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
                         <img src="{{asset('assets')}}/img/flags/us.png" alt="" height="20"> <span>English</span>
                     </a>
@@ -106,7 +108,7 @@ $currentRouteName = Route::currentRouteName();
                             <img src="{{asset('assets')}}/img/flags/de.png" alt="" height="16"> German
                         </a>
                     </div>
-                </li>
+                </li> --}}
                 <!-- /Flag -->
 
                 <!-- Notifications -->
@@ -326,7 +328,7 @@ $currentRouteName = Route::currentRouteName();
                     <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                         <span class="user-img"><img src="{{asset('assets')}}/img/profiles/avatar-21.jpg" alt="">
                             <span class="status online"></span></span>
-                        <span>{{Auth::user()->first_name}}</span>
+                        <span>{{Auth::user()->name}}</span>
                     </a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="{{route('employee.profile')}}">Profile</a>
@@ -372,7 +374,7 @@ $currentRouteName = Route::currentRouteName();
         <div class="sidebar" id="sidebar">
             <div class="sidebar-inner slimscroll">
                 <div id="sidebar-menu" class="sidebar-menu">
-                    <ul>
+                    <ul class="pb-5">
                         <li class="menu-title">
                             <span>Main</span>
                         </li>
@@ -380,15 +382,17 @@ $currentRouteName = Route::currentRouteName();
                             <a href="#"><i class="la la-dashboard"></i> <span> Dashboard</span> <span
                                     class="menu-arrow"></span></a>
                             <ul style="display: none;">
-                                <li><a href="index.html">Admin Dashboard</a></li>
-                                <li><a href="employee-dashboard.html">Employee Dashboard</a></li>
+                                <li><a href="{{route('admin.index')}}">Admin Dashboard</a></li>
+                                <li><a href="{{route('employee.index')}}">Employee Dashboard</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="la la-cube"></i> <span> Apps</span> <span
                                     class="menu-arrow"></span></a>
                             <ul style="display: none;">
-                                <li><a href="chat.html">Chat</a></li>
+                                <li>
+                                    <a class="{{($currentRouteName == 'apps.chat'?'active':'')}}"
+                                    href="{{route('apps.chat')}}">Chat</a></li>
                                 <li class="submenu">
                                     <a href="#"><span> Calls</span> <span class="menu-arrow"></span></a>
                                     <ul style="display: none;">
@@ -401,7 +405,9 @@ $currentRouteName = Route::currentRouteName();
                                 <li><a href="events.html">Calendar</a></li>
                                 <li><a href="contacts.html">Contacts</a></li>
                                 <li><a href="inbox.html">Email</a></li>
-                                <li><a href="file-manager.html">File Manager</a></li>
+                                <li>
+                                    <a class="{{($currentRouteName == 'apps.file_manager'?'active':'')}}"
+                                    href="{{route('apps.file_manager')}}">File Manager</a></li>
                             </ul>
                         </li>
                         <li class="menu-title">
@@ -420,23 +426,33 @@ $currentRouteName = Route::currentRouteName();
                                         href="{{route('employee.holidays')}}">Holidays</a>
                                     </li>
                                 <li>
-                                    <a href="leaves.html">Leaves (Admin) <span
+                                    <a href="#">Leaves (Admin) <span
                                             class="badge badge-pill bg-primary float-right">1</span></a>
                                         </li>
                                 <li>
                                     <a class="{{($currentRouteName == 'employee.leaves'?'active':'')}}"
                                     href="{{route('employee.leaves')}}">Leaves (Employee)</a>
                                 </li>
-                                <li><a href="leave-settings.html">Leave Settings</a></li>
+                                <li>
+                                    <a class="{{($currentRouteName == 'employee.leave.settings'?'active':'')}}"
+                                    href="{{route('employee.leave.settings')}}">Leave Settings</a></li>
                                 <li><a href="attendance.html">Attendance (Admin)</a></li>
                                 <li>
                                     <a class="{{($currentRouteName == 'employee.attendance'?'active':'')}}"
                                     href="{{route('employee.attendance')}}">Attendance (Employee)</a>
                                 </li>
-                                <li><a href="departments.html">Departments</a></li>
-                                <li><a href="designations.html">Designations</a></li>
-                                <li><a href="timesheet.html">Timesheet</a></li>
-                                <li><a href="overtime.html">Overtime</a></li>
+                                <li>
+                                    <a class="{{($currentRouteName == 'employee.departments'?'active':'')}}"
+                                    href="{{route('employee.departments')}}">Departments</a></li>
+                                <li>
+                                    <a class="{{($currentRouteName == 'employee.designations'?'active':'')}}"
+                                    href="{{route('employee.designations')}}">Designations</a></li>
+                                <li>
+                                    <a class="{{($currentRouteName == 'employee.timesheet'?'active':'')}}"
+                                    href="{{route('employee.timesheet')}}">Timesheet</a></li>
+                                <li>
+                                    <a class="{{($currentRouteName == 'employee.overtime'?'active':'')}}"
+                                    href="{{route('employee.overtime')}}">Overtime</a></li>
                             </ul>
                         </li>
                         <li>
@@ -446,9 +462,15 @@ $currentRouteName = Route::currentRouteName();
                             <a href="#"><i class="la la-rocket"></i> <span> Projects</span> <span
                                     class="menu-arrow"></span></a>
                             <ul style="display: none;">
-                                <li><a href="projects.html">Projects</a></li>
-                                <li><a href="tasks.html">Tasks</a></li>
-                                <li><a href="task-board.html">Task Board</a></li>
+                                <li>
+                                    <a class="{{($currentRouteName == 'project.index'?'active':'')}}"
+                                    href="{{route('project.index')}}">Projects</a></li>
+                                <li>
+                                    <a class="{{($currentRouteName == 'project.tasks'?'active':'')}}"
+                                    href="{{route('project.tasks')}}">Tasks</a></li>
+                                <li>
+                                    <a class="{{($currentRouteName == 'project.task_board'?'active':'')}}"
+                                    href="{{route('project.task_board')}}">Task Board</a></li>
                             </ul>
                         </li>
                         <li>
@@ -479,6 +501,10 @@ $currentRouteName = Route::currentRouteName();
                                 <li>
                                     <a class="{{($currentRouteName == 'employee.salary'?'active':'')}}"
                                     href="{{route('employee.salary')}}"> Employee Salary </a>
+                                </li>
+                                <li>
+                                    <a class="{{($currentRouteName == 'employee.salary_settings'?'active':'')}}"
+                                    href="{{route('employee.salary_settings')}}"> Salary Settings </a>
                                 </li>
                                 <li>
                                     <a class="{{($currentRouteName == 'employee.salary_view'?'active':'')}}"
@@ -634,41 +660,6 @@ $currentRouteName = Route::currentRouteName();
                                 <li><a href="data-tables.html">Data Table </a></li>
                             </ul>
                         </li>
-                        <li class="menu-title">
-                            <span>Extras</span>
-                        </li>
-                        <li>
-                            <a href="#"><i class="la la-file-text"></i> <span>Documentation</span></a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);"><i class="la la-info"></i> <span>Change Log</span> <span
-                                    class="badge badge-primary ml-auto">v3.4</span></a>
-                        </li>
-                        <li class="submenu">
-                            <a href="javascript:void(0);"><i class="la la-share-alt"></i> <span>Multi Level</span> <span
-                                    class="menu-arrow"></span></a>
-                            <ul style="display: none;">
-                                <li class="submenu">
-                                    <a href="javascript:void(0);"> <span>Level 1</span> <span
-                                            class="menu-arrow"></span></a>
-                                    <ul style="display: none;">
-                                        <li><a href="javascript:void(0);"><span>Level 2</span></a></li>
-                                        <li class="submenu">
-                                            <a href="javascript:void(0);"> <span> Level 2</span> <span
-                                                    class="menu-arrow"></span></a>
-                                            <ul style="display: none;">
-                                                <li><a href="javascript:void(0);">Level 3</a></li>
-                                                <li><a href="javascript:void(0);">Level 3</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="javascript:void(0);"> <span>Level 2</span></a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);"> <span>Level 1</span></a>
-                                </li>
-                            </ul>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -703,6 +694,8 @@ $currentRouteName = Route::currentRouteName();
 
     <!-- Custom JS -->
     <script src="{{asset('assets')}}/js/app.js"></script>
+
+    @yield('custom_js')
 
 </body>
 

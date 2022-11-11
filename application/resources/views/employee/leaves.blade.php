@@ -85,7 +85,7 @@
                             <td>
                                 <h2 class="table-avatar">
                                     <a href="profile.html" class="avatar avatar-xs"><img
-                                            src="assets/img/profiles/avatar-09.jpg" alt=""></a>
+                                            src="{{asset('assets')}}/img/profiles/avatar-09.jpg" alt=""></a>
                                     <a href="#">Richard Miles</a>
                                 </h2>
                             </td>
@@ -118,7 +118,7 @@
                             <td>
                                 <h2 class="table-avatar">
                                     <a href="profile.html" class="avatar avatar-xs"><img
-                                            src="assets/img/profiles/avatar-09.jpg" alt=""></a>
+                                            src="{{asset('assets')}}/img/profiles/avatar-09.jpg" alt=""></a>
                                     <a href="#">Richard Miles</a>
                                 </h2>
                             </td>
@@ -151,7 +151,7 @@
                             <td>
                                 <h2 class="table-avatar">
                                     <a href="profile.html" class="avatar avatar-xs"><img
-                                            src="assets/img/profiles/avatar-09.jpg" alt=""></a>
+                                            src="{{asset('assets')}}/img/profiles/avatar-09.jpg" alt=""></a>
                                     <a href="#">Richard Miles</a>
                                 </h2>
                             </td>
@@ -184,7 +184,7 @@
                             <td>
                                 <h2 class="table-avatar">
                                     <a href="profile.html" class="avatar avatar-xs"><img
-                                            src="assets/img/profiles/avatar-09.jpg" alt=""></a>
+                                            src="{{asset('assets')}}/img/profiles/avatar-09.jpg" alt=""></a>
                                     <a href="#">Richard Miles</a>
                                 </h2>
                             </td>
@@ -217,7 +217,7 @@
                             <td>
                                 <h2 class="table-avatar">
                                     <a href="profile.html" class="avatar avatar-xs"><img
-                                            src="assets/img/profiles/avatar-09.jpg" alt=""></a>
+                                            src="{{asset('assets')}}/img/profiles/avatar-09.jpg" alt=""></a>
                                     <a href="#">Richard Miles</a>
                                 </h2>
                             </td>
@@ -250,7 +250,7 @@
                             <td>
                                 <h2 class="table-avatar">
                                     <a href="profile.html" class="avatar avatar-xs"><img
-                                            src="assets/img/profiles/avatar-09.jpg" alt=""></a>
+                                            src="{{asset('assets')}}/img/profiles/avatar-09.jpg" alt=""></a>
                                     <a href="#">Richard Miles</a>
                                 </h2>
                             </td>
@@ -283,7 +283,7 @@
                             <td>
                                 <h2 class="table-avatar">
                                     <a href="profile.html" class="avatar avatar-xs"><img
-                                            src="assets/img/profiles/avatar-09.jpg" alt=""></a>
+                                            src="{{asset('assets')}}/img/profiles/avatar-09.jpg" alt=""></a>
                                     <a href="#">Richard Miles</a>
                                 </h2>
                             </td>
@@ -316,7 +316,7 @@
                             <td>
                                 <h2 class="table-avatar">
                                     <a href="profile.html" class="avatar avatar-xs"><img
-                                            src="assets/img/profiles/avatar-09.jpg" alt=""></a>
+                                            src="{{asset('assets')}}/img/profiles/avatar-09.jpg" alt=""></a>
                                     <a href="#">Richard Miles</a>
                                 </h2>
                             </td>
