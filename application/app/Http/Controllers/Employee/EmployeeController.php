@@ -35,6 +35,7 @@ class EmployeeController extends Controller
     }
     public function attendance()
     {
+        
         return view('employee.attendance');
     }
     public function departments()

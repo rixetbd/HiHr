@@ -30,11 +30,11 @@
                     </div>
                     <div class="punch-info">
                         <div class="punch-hours">
-                            <span>3.45 hrs</span>
+                            <span id="live_time">00:00:00</span>
                         </div>
                     </div>
                     <div class="punch-btn-section">
-                        <button type="button" class="btn btn-primary punch-btn">Punch Out</button>
+                        <button type="button" onclick="submitAttendenceTime()" class="btn btn-primary punch-btn" id="punch_in">Punch In</button>
                     </div>
                     <div class="statistics">
                         <div class="row">
@@ -216,7 +216,7 @@
                             <th>Overtime</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="attendance_table">
                         <tr>
                             <td>1</td>
                             <td>19 Feb 2019</td>
@@ -242,5 +242,78 @@
     </div>
 </div>
 <!-- /Page Content -->
+
+@endsection
+
+
+@section('custom_js')
+
+
+    {{-- @if () --}}
+        <script>
+
+        </script>
+    {{-- @endif --}}
+
+<script>
+
+    function submitAttendenceTime() {
+        $.ajax({
+            type: "POST",
+            url: `{{route('employee.attendance.store')}}`,
+            data: {"id": '0'},
+            success: function (data) {
+                today_activity();
+            }
+        });
+
+    }
+
+    function today_activity() {
+        $.ajax({
+            type: "POST",
+            url: `{{route('employee.attendance.today_activity')}}`,
+            data: {"id": '0'},
+            success: function (data) {
+                console.log(data.attendance_data.pop()['created_at']);
+
+                // const getTime = new Date(data.attendance_data.pop()['created_at']);
+                // let text = getTime.toTimeString().split(' ');
+                // let getcurtime = text[0].split(':');
+                // consoletime = new Date();
+                // console.log(consoletime);
+                // const getTime = new Date(data.attendance_data.pop()['created_at']);
+                // let timeM = getTime.toString();
+                // // let getcurtime = text[0].split(':');
+                // // consoletime = new Date();
+                // // console.log(text);
+                // let time = new Date();
+
+                // let timeaa = getTime.getMinutes() - time.getMinutes();
+                // console.log(timeaa);
+                // console.log(getTime.getMinutes());
+
+                if (data.attendance_data != '') {
+                    $('#punch_in').html('Punch Out');
+                    setInterval(function(){
+                        const clock = document.getElementById("live_time");
+                        let time = new Date();
+                        let hr = time.getHours();
+                        let min = time.getMinutes();
+                        let sec = time.getSeconds();
+                        if(hr == 0){hr = 12;}
+                        if(min < 10){min = "0" + min;}
+                        if(sec < 10){sec = "0" + sec;}
+                            clock.textContent = hr + " : " + min + " : " + sec;
+                    });
+                }
+
+                $('#attendance_table').html(data.attendance_table_data);
+            }
+        });
+    }
+    today_activity();
+
+</script>
 
 @endsection

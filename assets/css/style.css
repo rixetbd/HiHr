@@ -73,6 +73,7 @@ Version      : 3.6
 64. Responsive
 
 ========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
 
 @font-face {
 	font-family: 'Material Icons';
@@ -4540,17 +4541,20 @@ html.menu-opened body {
 	margin-bottom: 20px;
 }
 .punch-hours {
-    align-items: center;
+	align-items: center;
     background-color: #f9f9f9;
     border: 5px solid #e3e3e3;
     border-radius: 50%;
     display: flex;
-    font-size: 18px;
-    height: 120px;
+    font-size: 20px;
+	font-family: 'Orbitron', sans-serif;
+    height: 180px;
     justify-content: center;
     margin: 0 auto;
-    width: 120px;
+    width: 180px;
+    font-weight: 600;
 }
+
 .punch-btn-section {
     margin-bottom: 20px;
     text-align: center;
